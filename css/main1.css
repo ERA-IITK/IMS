@@ -1,0 +1,797 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('../fonts/Proxima Nova Light.otf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: gotham;
+    src: url('../fonts/gotham/GothamMedium.ttf');
+}
+
+@font-face {
+    font-family: nunito;
+    src: url('../fonts/nunito/Nunito-Bold.ttf');
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+
+/* ------------------------------------ */
+
+a {
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* ------------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+ul,
+li {
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+/* ------------------------------------ */
+
+input {
+    display: block;
+    outline: none;
+    border: none !important;
+}
+
+textarea {
+    display: block;
+    outline: none;
+}
+
+textarea:focus,
+input:focus {
+    border-color: transparent !important;
+}
+
+
+/* ------------------------------------ */
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utiliti ]*/
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Top {
+    width: 100%;
+    background: #4151b2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3px 3px;
+}
+
+.ERA-logo {
+    padding-top: 5px;
+    width: 300px;
+}
+
+.ERA-logo img {
+    /* background-color: #fff; */
+    width: 50%;
+}
+
+.admin {
+    font-family: gotham;
+    font-size: 70px;
+    color: #ffffff;
+    line-height: 1.2;
+    align-self: left;
+    justify-content: left;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: -200px;
+    /* padding-right: 50px; */
+}
+
+.name {
+    /* padding-left: 500px; */
+    padding-top: 10px;
+    align-self: right;
+    color: #ffffff;
+    font-size: 20px;
+    justify-content: right;
+    right: 900px;
+}
+
+.identity {
+    /* height: 100%; */
+    /* overflow: auto; */
+    /* text-transform: uppercase; */
+    position: absolute;
+    right: 5px;
+    top: 6%;
+    height: 24px;
+    width: 80px;
+    font-family: OpenSans-Regular;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+    color: #f4f4f5;
+    line-height: 1.2;
+    font-weight: unset;
+    align-self: right;
+    /* margin-bottom: 3%; */
+    /* margin-right: 10%; */
+    /* margin-left: screen.width- 200; */
+}
+
+.logout {
+    /* width: 200px; */
+    height: 100%;
+    text-transform: uppercase;
+    background: #c61236;
+    /* background-color: rgba(255, 255, 255, 0); */
+    font-family: OpenSans-Regular;
+    font-size: 50px;
+    border-radius: 5px;
+    color: #f4f4f5;
+    line-height: 1.2;
+    font-weight: unset;
+    align-self: right;
+    /* justify-content: center;  */
+}
+
+.Add-a-Component {
+    /* width: 400px; */
+    font-family: nunito;
+    font-size: 40px;
+    background: #ffffff;
+    text-transform: uppercase;
+    /* align-items: center; */
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    /* padding-right: 400px; */
+    margin-left: 10px;
+}
+
+.container-table1001 {
+    width: 100%;
+    /* min-height: 100vh; */
+    background: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    /* padding: 0px 5px; */
+}
+
+.wrap-table1001 {
+    width: 1170px;
+}
+
+.table100-head1 th {
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+.Add-a-Component1 {
+    /* width: 400px; */
+    font-family: nunito;
+    font-size: 60px;
+    background: #ffffff;
+    text-transform: uppercase;
+    /* align-items: center; */
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    /* padding-right: 400px; */
+    margin-left: 800px;
+}
+
+.container-table1002 {
+    width: 100%;
+    /* min-height: 100vh; */
+    background: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    margin-left: 800px;
+    /* padding: 0px 5px;
+    padding-right: 50px; */
+}
+
+.wrap-table1002 {
+    width: 1170px;
+}
+
+.table100-head2 th {
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+    margin-left: 800px;
+    padding-right: 30px;
+}
+
+.topnav {
+    width: 10%;
+    overflow: hidden;
+    background-color: #4151b2;
+    padding-top: 5px;
+    align-self: right;
+    justify-content: right;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+/* Style the "active" element to highlight the current page */
+
+.topnav a.active {
+    background-color: #4151b2;
+    color: white;
+}
+
+
+/* Style the search box inside the navigation bar */
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    padding-bottom: 5px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+
+@media screen and (max-width: 600px) {
+    .topnav a,
+    .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: right;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+.container-table100 {
+    width: 100%;
+    min-height: 70vh;
+    background: #4151b2;
+    background: -webkit-linear-gradient(45deg, #ffffff, #ffffff);
+    background: -o-linear-gradient(45deg, #ffffff, #ffffff);
+    background: -moz-linear-gradient(45deg, #ffffff, #ffffff);
+    background: linear-gradient(45deg, #ffffff, #ffffff);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 0px 10px; */
+}
+
+.wrap-table100 {
+    width: 1170px;
+}
+
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+table * {
+    position: relative;
+}
+
+table td,
+table th {
+    padding-left: 8px;
+}
+
+table thead tr {
+    height: 60px;
+    background: #4151b2;
+}
+
+table tbody tr {
+    height: 50px;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table td,
+table th {
+    text-align: left;
+}
+
+table td.l,
+table th.l {
+    text-align: right;
+}
+
+table td.c,
+table th.c {
+    text-align: center;
+}
+
+table td.r,
+table th.r {
+    text-align: center;
+}
+
+.table100-head th {
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tbody tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+tbody tr:hover {
+    color: #555555;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.column1 {
+    width: 260px;
+    padding-left: 40px;
+}
+
+.column2 {
+    width: 160px;
+}
+
+.column3 {
+    width: 245px;
+}
+
+.column4 {
+    width: 160px;
+}
+
+.column5 {
+    width: 160px;
+}
+
+.column6 {
+    width: 180px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    table {
+        display: block;
+    }
+    table>*,
+    table tr,
+    table td,
+    table th {
+        display: block;
+    }
+    table thead {
+        display: none;
+    }
+    table tbody tr {
+        height: auto;
+        padding: 37px 0;
+    }
+    table tbody tr td {
+        padding-left: 40% !important;
+        margin-bottom: 24px;
+    }
+    table tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+    table tbody tr td:before {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #4151b2;
+        font-weight: unset;
+        position: absolute;
+        width: 40%;
+        left: 30px;
+        top: 0;
+    }
+    table tbody tr td:nth-child(1):before {
+        content: "Date";
+    }
+    table tbody tr td:nth-child(2):before {
+        content: "Order ID";
+    }
+    table tbody tr td:nth-child(3):before {
+        content: "Name";
+    }
+    table tbody tr td:nth-child(4):before {
+        content: "Price";
+    }
+    .column4 {
+        text-align: right;
+    }
+    .column5,
+    .column6,
+    .column4,
+    .column1,
+    .column2,
+    .column3 {
+        width: 100%;
+    }
+    tbody tr {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-table100 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+.container-login100-form-btn {
+    width: 60%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.login100-form-btn {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+    background: #51b241;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 25px; */
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login100-form-btn:hover {
+    background: #333333;
+}
+
+.container-login100-form-btn1 {
+    width: 60%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login100-form-btn1 {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+    background: #c61236;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 25px; */
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login100-form-btn1:hover {
+    background: #333333;
+}
+
+.container-login100-form-btn2 {
+    width: 30%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    padding-top: 20px;
+}
+
+.login100-form-btn2 {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: #33333302;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    /* padding: 0 25px; */
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login100-form-btn2:hover {
+    background: #c96f6f;
+}
+
+.container-login100-form-btn3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    padding-top: 20px;
+}
+
+.login100-form-btn3 {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: #51b241;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    /* padding: 0 25px; */
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login100-form-btn3:hover {
+    background: #070707;
+}
+
+.container-login100-form-btn4 {
+    width: 30%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* padding-top: 40px; */
+}
+
+.login100-form-btn4 {
+    font-family: gotham;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: #33333302;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    height: 24px;
+    width: 70px;
+    padding: 2%;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    /* margin-top: 55px;
+    margin-right: 5px; */
+}
+
+.login100-form-btn4:hover {
+    background: #c96f6f;
+}
+
+.btn-group {
+    color: white;
+    height: 24px;
+    width: 70px;
+    text-align: center;
+    padding: 0px;
+    /* White text */
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: right;
+    /* Float the buttons side by side */
+}
+
+
+/* Clear floats (clearfix hack) */
+
+
+/* Add a background color on hover */
