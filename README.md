@@ -2,7 +2,7 @@
 # ERA_IMS_v0.9
 The initial project of Inventory managemen for ERA IITK 
 ## Developer Notes 
-Developed by Muskan Aggarwal, Luvneesh Kumar, Shobhit Jagga. UG Students and members of Team ERA IITK. 
+Developed by Muskan Agarwal, Luvneesh Kumar, Shobhit Jagga. UG Students and members of Team ERA IITK. 
 V0.9 consists of a login page, User page and Admin page. 
 The back end is Written in PHP and the front-end is in CSS and Html5. The work on Back end has been completed for the following features : 
 ### Login Page 
