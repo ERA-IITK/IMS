@@ -4,7 +4,7 @@ The initial project of Inventory managemen for ERA IITK
 ## Developer Notes 
 Developed by Muskan Agarwal, Luvneesh Kumar, Shobhit Jagga. UG Students and members of Team ERA IITK. 
 V0.9 consists of a login page, User page and Admin page. 
-Login Page, User Page and Admin page was created using HTML, CSS and JavaScript.
+Login Page and dashboard was created for admins and users using HTML, CSS and JavaScript.
 The back end is Written in PHP and the front-end is in CSS and Html5. The work on Back end has been completed for the following features : 
 ### Login Page 
   - New User registration  
